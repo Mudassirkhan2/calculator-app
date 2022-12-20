@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+:root {
+  /* #### Backgrounds */
+
+  --Very-dark-desaturated: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-1: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue-2: hsl(224, 36%, 15%);
+
+  /* #### Keys */
+
+  --Desaturated-dark-blue: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-shadow: hsl(224, 28%, 35%);
+
+  --Red: hsl(6, 63%, 50%);
+  --Dark-red: hsl(6, 70%, 34%);
+
+  --Light-grayish-orange: hsl(30, 25%, 89%);
+  --Grayish-orange: hsl(28, 16%, 65%);
+
+  /* #### Text */
+
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+}
+/* ### Theme 1
+
+#### Backgrounds
+
+- Very dark desaturated blue (main background): hsl(222, 26%, 31%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
+
+#### Keys
+
+- Desaturated dark blue (key background): hsl(225, 21%, 49%)
+- Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
+
+- Red (key background, toggle): hsl(6, 63%, 50%)
+- Dark red (key shadow): hsl(6, 70%, 34%)
+
+- Light grayish orange (key background): hsl(30, 25%, 89%)
+- Grayish orange (key shadow): hsl(28, 16%, 65%)
+
+#### Text
+
+- Very dark grayish blue: hsl(221, 14%, 31%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* - Font size (numbers): 32px */
+body {
+  background-color: var(--Very-dark-desaturated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "League Spartan";
+}
+.main-container {
+  width: 400px;
+}
+#calc-heading {
+  color: var(--White);
+  font-size: 1.5rem;
+}
+.answer-container {
+  width: 100%;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: end;
+  color: var(--White);
+  font-weight: 700;
+  background-color: var(--Very-dark-desaturated-blue-2);
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.whole-containerNumbers {
+  background-color: var(--Very-dark-desaturated-blue-1);
+  border-radius: 10px;
+}
+.numbers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+}
+.numbers-container p {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--Light-grayish-orange);
+  border-radius: 10px;
+  margin: 0.5rem 0.5rem;
+  font-size: 32px;
+  color: var(--Very-dark-grayish-blue);
+}
+.numbers-container p:hover {
+  background-color: var(--White);
+}
+#Del {
+  background-color: var(--Desaturated-dark-blue);
+  color: var(--White);
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+#Del:hover {
+  background-color: var(--Desaturated-dark-blue-shadow);
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1.5rem 1rem;
+  gap: 1rem;
+  /* margin: 1rem 0; */
+}
+#reset,
+#equal {
+  background-color: var(--Desaturated-dark-blue);
+  color: var(--White);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#reset:hover {
+  background-color: var(--Desaturated-dark-blue-shadow);
+}
+#equal {
+  background-color: var(--Red);
+}
+#equal:hover {
+  background-color: var(--Dark-red);
+}
+@media (max-width:475px) {
+  .main-container{
+    width: 300px;
+    min-width: 90%;
+  }
+}
