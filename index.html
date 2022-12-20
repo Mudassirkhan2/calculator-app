@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="main-container">
+        <header>
+          <p id="calc-heading">calc</p>
+        </header>
+          <form >
+            <input
+              type="text"
+              name="calculatedValue"
+              id="calculatedValue"
+              placeholder="00"
+              class="answer-container"
+            />
+          </form>
+
+        <div class="whole-containerNumbers">
+          <div class="numbers-container">
+            <p id="7" value="7" onclick="Insert(7)">7</p>
+            <p id="8" onclick="Insert(8)">8</p>
+            <p id="9" onclick="Insert(9)">9</p>
+            <p id="Del">DEL</p>
+            <p id="4" onclick="Insert(4)">4</p>
+            <p id="5" onclick="Insert(5)">5</p>
+            <p id="6" onclick="Insert(6)">6</p>
+            <p id="+" onclick="operator('+')">+</p>
+            <p id="1" onclick="Insert(1)">1</p>
+            <p id="2" onclick="Insert(2)">2</p>
+            <p id="3" onclick="Insert(3)">3</p>
+            <p id="-" onclick="operator('-')">-</p>
+            <p id="." onclick="Insert('.')">.</p>
+            <p id="0" onclick="Insert(0)">0</p>
+            <p id="/" onclick="operator('/')">/</p>
+            <p id="x" onclick="operator('*')">x</p>
+          </div>
+          <div class="footer">
+            <p id="reset">RESET</p>
+            <p id="equal">=</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
