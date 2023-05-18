@@ -1,6 +1,10 @@
-# calculator-appVanillaJS
-calculator-appVanillaJS is frontend mentor challenge
-live url : https://mudassirkhan2.github.io/calculator-appVanillaJS/
+<h1 align="center">
+  Calculator-app
+  <br>
+</h1>
+<h4 align="center"> calculator-appVanilla is frontend mentor challenge</h4>
+
+live url :  https://mudassirkhan2.github.io/calculator-app/
 
 
 Desktop veiw:
